@@ -1,0 +1,183 @@
+@import '../../assets/vars.scss';
+
+.image-cover{
+    z-index: 1;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 220px;
+
+    .main-slider-content{
+        max-width: 700px;
+        margin-left: auto;
+        
+
+        .sub-title{
+            position: relative;
+            margin-bottom: 15px;
+            border-radius: 50px;
+            display: inline-block;
+            padding: 10px 20px 10px 42px;
+            color: $paragraph-color;
+            background-color: #fff;
+            box-shadow: #959da526 0 8px 24px;
+            font-size: 15px;
+            font-weight: 500;
+
+            i{
+                transform: translateY(-50%);
+                position: absolute;
+                color: #14e49a;
+                margin-top: 2px;
+                font-size: 19px;
+                left: 20px;
+                top: 45%;
+
+                
+            }
+        }
+
+        h1{
+            font-size: 75px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        p{
+            color: #000;
+        }
+
+        .slider-btn{
+            margin-top: 30px;
+
+            .default-btn{
+                background-color: $main_color;
+                transition: all 0.5s;
+                color: #fff;
+                display: inline-block;
+                padding: 14px 40px;
+                border-radius: 0;
+                box-shadow: none;
+                border: none;
+                font-size: 16px;
+                font-weight: 500;
+
+                &:hover{
+                    background-color: #005879;
+                    transition: all 0.5s;
+                }
+            }
+        }
+
+        .checkup-content{
+            display: inline-block;
+            position: relative;
+            margin-left: 25px;
+            top: 4px;
+
+            .icon{
+                position: absolute;
+                top: -20px;
+                left: 0;
+
+                i{
+                    width: 55px;
+                    height: 55px;
+                    font-size: 35px;
+                    padding: 10px 13px;
+                    text-align: center;
+                    border-radius: 50%;
+                    display: inline-block;
+                    color: #fff;
+                    transition: all 0.5s;
+                    background-color: $main-color;
+
+                    &:hover{
+                        background-color: #005879;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+
+            span{
+                padding-left: 75px;
+
+                a{
+                    color: #000;
+                    transition: all 0.5s;
+
+                    &:hover{
+                        color: $main_color;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.owl-nav{
+    background: #fff !important;
+    transition: all 0.5s !important;
+    transform: translateY(-50%) !important;
+    color: #000 !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    text-align: center !important;
+    font-size: 27px !important;
+    height: 55px !important;
+    width: 55px !important;
+    left: 20px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    top: 50% !important;
+}
+
+//responsive
+
+
+@media screen and (max-width:732px){
+    .main-slider-content{
+        h1{
+            font-size: 30px !important;
+            margin-top: 10px !important;
+            
+        }
+
+        .default-btn{
+            padding: 12px 30px !important;
+            font-size: 14px !important;
+        }
+
+        .checkup-content{
+            margin-left: 0 !important;
+            top: 0px !important;
+            display: block !important;
+            margin-top: 39px !important;
+
+            i{
+                width: 45px !important;
+                height: 45px !important;
+                font-size: 20px !important;
+                line-height: 26px !important;
+            }
+
+            span{
+                padding-left: 55px !important;
+            }
+        }
+
+        .sub-title{
+            padding: 7px 15px 7px 35px !important;
+            margin-bottom: 17px !important;
+            font-size: 13px !important;
+
+            i{
+                margin-top: 1px !important;
+                left: 15px !important;
+            }
+        }
+    }
+}

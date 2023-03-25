@@ -1,0 +1,45 @@
+@import '../../assets/vars.scss';
+
+.not-found-area{
+    border-top: 1px solid #eeeeee;
+
+    .not-found-content{
+        text-align: center;
+
+        h3{
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        p{
+            max-width: 500px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .default-btn{
+            margin-top: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .not-found-content{
+
+        h3{
+            font-size: 18px !important;
+            margin-bottom: 15px !important;
+        }
+
+        p{
+            font-size: 14px;
+            max-width: 100%;
+        }
+
+        .default-btn{
+            margin-top: 0;
+        }
+        
+    }
+}

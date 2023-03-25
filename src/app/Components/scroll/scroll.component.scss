@@ -1,0 +1,25 @@
+@import '../../../assets/vars.scss';
+
+
+.top{
+    font-size: 25px;
+    background-color: $main_color;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    border: none;
+    bottom: 22px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover{
+        background-color: #005879;
+        color: #fff;
+        transition: all 0.5s;
+    }
+}

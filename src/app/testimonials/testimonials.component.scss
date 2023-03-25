@@ -1,0 +1,12 @@
+@import '../../assets/vars.scss';
+@import '../about/about.component.scss';
+@import '../Components/testimonial-part/testimonial-part.component.scss';
+
+.single-review-item{
+    box-shadow: #959da526 0 8px 24px;
+
+    &:hover .icon i{
+       color: #fff;
+       background-color: $main_color;
+    }
+}

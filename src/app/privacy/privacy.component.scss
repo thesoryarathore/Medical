@@ -1,0 +1,64 @@
+@import '../booking/booking.component.scss';
+@import '../../assets/vars.scss';
+
+.privacy-policy-area{
+    .privacy-policy-content{
+        .h1 , .h2 , .h3 , .h4 , .h5 , .h6{
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        h1 , h2 , h3 , h4 , h5 , h6{
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        p{
+            a{
+                color: $main_color;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        strong{
+            color: #000 !important;
+        }
+
+        ul{
+            li{
+                color: $paragraph-color;
+                margin-bottom: 12px;
+
+                a{
+                    color: $main_color;
+    
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        ol{
+            li{
+                color: $paragraph-color;
+                margin-bottom: 12px;
+
+                a{
+                    color: $main_color;
+    
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

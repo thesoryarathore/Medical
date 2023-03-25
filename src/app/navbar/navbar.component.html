@@ -1,0 +1,80 @@
+<div class="navbar-area">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+           <a class="navbar-brand" routerLink="/home">
+            <h1>Surian</h1>
+           </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" routerLink="/home">Home</a>
+                  </li>
+                  <li><a>{{userName | titlecase}}</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/about">About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu fade-up">
+                      <li><a class="dropdown-item" routerLink="/services">Services</a></li>
+                      <li><a class="dropdown-item" routerLink="/service-details">service-details</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Doctors
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" routerLink="/dentict">Denticts</a></li>
+                      <li><a class="dropdown-item" routerLink="/doctor">Doctors</a></li>
+                      <li><a class="dropdown-item" routerLink="/doctor-details">Doctor Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Signup
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" routerLink="/booking">Booking</a></li>
+                      <li><a class="dropdown-item" routerLink="/pricing">Pricing</a></li>
+                      <li><a class="dropdown-item" routerLink="/testimonials">Testimonials</a></li>
+                      <li><a class="dropdown-item" routerLink="/vaccine">Vaccine</a></li>
+                      <li><a class="dropdown-item" routerLink="/privacy">Privacy Policy</a></li>
+                      <li><a class="dropdown-item" routerLink="/login">Login</a></li>
+                      <li><a class="dropdown-item" routerLink="/register">Register</a></li>
+                      <li hidden><a class="dropdown-item" routerLink="/notfound">404 Page</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Blog
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" routerLink="/blog">Blog</a></li>
+                      <li><a class="dropdown-item" routerLink="/blog-details">Blog Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/contact">Contact Us</a>
+                  </li>
+                </ul>
+                <div class="others-option d-flex align-items-center">
+                  <div class="option-item">
+                    <div class="search-btn">
+                      <i class='bx bx-search'></i>
+                    </div>
+                  </div>
+                  <div class="option-item">
+                    <a routerLink="/booking" class="default-btn"> Book An Appointment </a>
+                  </div>
+                </div>
+              </div>
+            
+          </nav>
+    </div>
+</div>

@@ -1,0 +1,200 @@
+@import '../booking/booking.component.scss';
+@import '../../assets/vars.scss';
+
+.login-form{
+    padding: 50px;
+    max-width: 600px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 0 1.25rem #6c76861a;
+    margin-left: auto;
+    margin-right: auto;
+
+    h4{
+        margin-bottom: 12px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    form{
+        margin-top: 5px;
+
+        .form-group{
+            margin-bottom: 20px;
+
+            label{
+                display: block;
+                margin-bottom: 10px;
+                color: #000;
+                font-weight: 500;
+                font-size: 15px;
+            }
+
+            .form-control{
+                background-color: transparent;
+                transition: all 0.5s;
+                font-size: 16px;
+                border: 1px solid #e1e1e1;
+                color: var(--black-color);
+                line-height: initial;
+                padding: 15px 18px;
+                border-radius: 5px;
+                box-shadow: unset;
+                height: 55px;
+            }
+        }
+
+        .remember-me-wrap{
+            .form-check{
+                margin-bottom: 0;
+
+                .form-check-input{
+                    margin-top: 0.16em;
+                    box-shadow: unset!important;
+                }
+
+                .form-check-label{
+                    color: $paragraph-color;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                }
+            }
+
+            
+        }
+
+        .lost-your-password-wrap{
+            text-align: end;
+
+            a{
+                color: #000;
+                display: inline-block;
+                position: relative;
+                line-height: 1.4;
+
+                &:before{
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    content: "";
+                    position: absolute;
+                    background-color: #eee;
+                    transition: all 0.5s;
+                }
+
+                &:after{
+                    left: 0;
+                    width: 0;
+                    bottom: 0;
+                    height: 1px;
+                    content: "";
+                    position: absolute;
+                    transition: all 0.5s;
+                    background-color: $main_color;                  
+                }
+
+                &:hover::after{
+                    width: 100%;
+                    transition: all 0.5s;
+                }
+            }
+        }
+
+        .default-btn{
+            margin-top: 20px;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+
+        .account-text{
+            margin-top: 20px;
+
+            span{
+                color: $paragraph-color;
+
+                a{
+                    color: $main_color !important;
+                }
+            }
+        }
+    }
+
+    &:hover{
+        border-color: $main_color;
+        transition: all 0.5s;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .login-form{
+       padding: 0;
+       max-width: 100%;
+       border: none!important;
+       box-shadow: unset!important;
+       background-color: transparent;
+
+        h4{
+         margin-bottom: 10px;
+         font-size: 20px;
+        }
+
+        form{
+            margin-top: 0;
+
+            .form-group{
+                margin-bottom: 15px;
+
+                label{
+                    font-size: 14px;
+                }
+
+                .form-control{
+                    font-size: 14px;
+                    padding: 15px;
+                    height: 50px;
+                }
+            }
+
+            .remember-me-wrap{
+                .form-check{
+                    margin-bottom: 0;
+
+                    .form-check-input{
+                        margin-top: 0.16em;
+                        box-shadow: unset!important;
+                    }
+
+                    .form-check-label{
+                        color: $paragraph-color;
+                        font-weight: 400;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .lost-your-password-wrap{
+                text-align: start;
+                margin-top: 10px;
+
+                a{
+                    color: #000;
+                    display: inline-block;
+                    position: relative;
+                    line-height: 1.4;
+                }
+            }
+
+            .default-btn{
+                margin-top: 15px;
+            }
+
+            .account-text{
+                margin-top: 15px;
+            }
+        }
+    }
+}
+

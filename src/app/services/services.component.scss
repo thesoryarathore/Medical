@@ -1,0 +1,85 @@
+@import '../about/about.component.scss';
+@import '../../assets/vars.scss';
+.services-area{
+
+    .single-services{
+        margin-bottom: 25px;
+        transition: all 0.5s;
+
+        .services-image{
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            overflow: hidden;
+
+            img{
+                border-radius: 10px 10px 0 0;
+                transition: all 0.5s;
+            }
+        }
+
+        .services-content{
+            box-shadow: 0 0 1.25rem #6c76861a;
+            border-bottom: 1px solid $main_color;
+            background-color: #fff;
+            transition: all 0.5s;
+            border-radius: 0 0 10px 10px;
+            padding: 35px 30px;
+
+            h3{
+                margin-bottom: 12px;
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            p{
+                transition: all 0.5s;
+            }
+        }
+
+        &:hover{
+            transform: translateY(-10px);
+            transition: all 0.5s;
+        }
+
+        &:hover img{
+            transform: rotate(2deg) scale(1.2);
+            transition: all 0.5s;
+        }
+    }
+
+    .pagination-area {
+        margin-top: 20px;
+        text-align: center;
+
+        .page-numbers[disabled] {
+            cursor: not-allowed;
+            color: #000!important;
+            background-color: #fff!important;
+        }
+
+        .page-numbers{
+            width: 45px;
+            height: 45px;
+            margin: 0 5px;
+            line-height: 45px;
+            border-radius: 5px;
+            display: inline-block;
+            color: #000;
+            transition: all 0.5s;
+            background-color: #fff;
+            box-shadow: #00000014 0 10px 36px, #00000005 0 0 0 1px;
+            font-size: 18px;
+            font-weight: 500;
+
+            i{
+                position: relative;
+                top: 3px;
+            }
+        }
+    }
+}
+
+.pagination-area .page-numbers.current, .pagination-area .page-numbers:hover {
+    background: $main_color !important;
+    color: #fff !important;
+}

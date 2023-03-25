@@ -1,0 +1,83 @@
+@import '../../assets/vars.scss';
+@import '../about/about.component.scss';
+
+
+.pricing-area{
+
+    .single-pricing-table{
+        text-align: center;
+        padding: 35px 25px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        background-color: #f8f8f8;
+        border: 1px solid #f8f8f8;
+        transition: all 0.5s;
+
+        .pricing-header{
+
+            h3{
+                margin-bottom: 0;
+                font-size: 25px;
+                font-weight: 500;
+            }
+            
+        }
+
+        .price{
+            line-height: 1;
+            font-size: 50px;
+            color: $main_color;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .pricing-features{
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+
+            li{
+                margin-bottom: 15px;
+            }
+
+            .color-gray{
+                color: #b4b4b4;
+            }
+        }
+
+        .pricing-btn{
+            margin-top: 25px;
+        }
+
+        &:hover{
+            border-color: $main_color;
+            transition: all 0.5s;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .pricing-area{
+        .single-pricing-table{
+            padding: 25px 20px;
+
+            .pricing-header{
+                h3{
+                    font-size: 20px;
+                }
+            }
+
+            .price{
+                font-size: 30px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .default-btn {
+                padding: 12px 30px;
+                font-size: 14px;
+            }
+        }
+    }
+}

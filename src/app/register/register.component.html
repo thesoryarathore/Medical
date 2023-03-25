@@ -1,0 +1,59 @@
+<div class="page-banner-area ptb-100 four">
+    <div class="container">
+        <div class="page-banner-content">
+            <h2>Register</h2>
+            <div class="pages-list">
+                <li>
+                    <a routerLink="/home">Home</a>
+                </li>
+                <li>
+                    Register
+                </li>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="register-area ptb-100">
+    <div class="container">
+        <div class="register-form">
+            <h4>Create Your Account</h4>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipiscing elit
+               sed do eiusmod tempor incididunt ut labore.
+            </p>
+            <form #userSignUp ="ngForm" (ngSubmit)="signUp(userSignUp.value)">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" placeholder="Username" class="form-control" name="name" ngModel>
+                </div>
+                <div class="form-group">
+                    <label>Email address</label>
+                    <input type="email" placeholder="Email address" class="form-control" name="email" ngModel email #email ="ngModel" required>
+                </div>
+                <p class="invalid-input"><span *ngIf="email.invalid && email.touched " >Please enter valid input</span></p>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" class="form-control" name="password" ngModel minlength="4" maxlength="20" #password ="ngModel" required>
+                </div>
+                <p class="invalid-input"><span *ngIf="password.invalid && password.touched " >password min. 4 characters</span></p>
+                <div class="form-group">
+                    <label>Confirm password</label>
+                    <input type="password" placeholder="Confirm password" class="form-control" name="confirm password" ngModel>
+                </div>
+                <p class="description">
+                    The password should be at least eight characters long.
+                    To make it stronger, use upper and lower case letters,
+                    numbers, and symbols like ! " ? $ % ^ & 
+                </p>
+                <button type="submit" class="default-btn">Create Account</button>
+                <div class="account-text">
+                    <span>
+                        Already have an account?
+                        <a routerLink="/login">Login</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

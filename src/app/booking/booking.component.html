@@ -1,0 +1,41 @@
+<div class="page-banner-area ptb-100 four">
+    <div class="container">
+        <div class="page-banner-content">
+            <h2>Make An Appointment</h2>
+            <div class="pages-list">
+                <li>
+                    <a routerLink="/home">Home</a>
+                </li>
+                <li>
+                    Appointment
+                </li>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="appointment-area bg-image ptb-100" style="background-image: url(assets/images/appointment-bg-2.jpg);">
+    <div class="container">
+        <div class="appointment-form">
+            <h4>
+                <i class='bx bx-calendar'></i>
+                Make An Appointment 
+            </h4>
+            <form #userBooking ="ngForm" (ngSubmit)="Booking(userBooking.value)" >
+                <div class="form-group">
+                    <input type="text" placeholder="Name" class="form-control" name="name" ngModel>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" class="form-control" name="email" ngModel>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Phone" class="form-control" name="phone" ngModel>
+                </div>
+                <div class="form-group">
+                    <input type="date" placeholder="Date" class="form-control" name="date" ngModel>
+                </div>
+                <button type="submit" class="default-btn">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+</div>
